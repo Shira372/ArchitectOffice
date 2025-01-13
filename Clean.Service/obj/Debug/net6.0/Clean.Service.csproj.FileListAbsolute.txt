@@ -1,0 +1,60 @@
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.deps.json
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfo.cs
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CopyComplete
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\refint\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\מהט-סטפנסקי\שאלות תכנות מונחה עצמים\Clean\Clean.Service\obj\Debug\net6.0\ref\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.deps.json
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfo.cs
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CopyComplete
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\refint\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\Clean\Clean.Service\obj\Debug\net6.0\ref\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfo.cs
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\refint\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.deps.json
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CopyComplete
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\EF-ז כסליו\Clean\Clean.Service\obj\Debug\net6.0\ref\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.deps.json
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\bin\Debug\net6.0\Clean.Core.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.AssemblyReference.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfoInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.AssemblyInfo.cs
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.csproj.CopyComplete
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\refint\Clean.Service.dll
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\Clean.Service.pdb
+C:\Users\user1\Desktop\שנה ב-תשפה\dote .Net\DTO-כא כסליו\Clean\Clean.Service\obj\Debug\net6.0\ref\Clean.Service.dll
