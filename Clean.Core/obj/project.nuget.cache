@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hxcsXXlUIWOVnjj5z+Kj9Qe11EBEYXhmxvSRs1rVfI37cenzTXAjhbUQ8FifKei3JruCQK1+S9xGBfsuTOkT5g==",
+  "dgSpecHash": "68XzF6/HbaIigFnNpKWzO1A5ziJfEmvXXShr4XqSAg/Z/2Bm6W2k5IlAXCklyglonMJooR9w1yL7/+O5Q1LM/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Core\\Clean.Core.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Core\\Clean.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

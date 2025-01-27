@@ -10,6 +10,6 @@ namespace Clean.Data.Repositories
     public interface IRepositoryManager
     {
         IArchitectRepository ArchitectRepository { get; }
-        void Save();
+        void SaveAsync();
     }
 }

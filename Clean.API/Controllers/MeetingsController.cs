@@ -3,6 +3,8 @@ using Clean.Core.Services;
 using Clean.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ArchitectsOffice.Controllers
 {
@@ -11,72 +13,73 @@ namespace ArchitectsOffice.Controllers
     public class MeetingsController : ControllerBase
     {
         private readonly IMeetingService _meetingService;
+
         public MeetingsController(IMeetingService meetingService)
         {
             _meetingService = meetingService;
         }
+
         // GET: api/<MeetingsController>
         [HttpGet]
-        public IEnumerable<Meeting> GetAll()
+        public async Task<IEnumerable<Meeting>> GetAll()
         {
-            //IArchitectService-השם של הפונקציה צריך להיות כמו
-            return _meetingService.GetAll();
+            return await _meetingService.GetAllAsync();
         }
 
         // GET api/<MeetingsController>/5
         [HttpGet("{id}")]
-
-        public IActionResult Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            Meeting metting = _meetingService.Get(id);
-            if (metting == null)
-            {
-                return NotFound(); // מחזיר 404 אם הפגישה לא נמצאה
-            }
-            return Ok(metting); // מחזיר 200 אם הפגישה נמצאה
-        }
-
-        //שליפה לפי תאריך וזמן התחלה
-        [HttpGet("Get/{start}")]
-        public ActionResult GetByStart(DateTime start)
-        {
-            Meeting meeting = _meetingService.GetByStart(start);
+            var meeting = await _meetingService.GetAsync(id);
             if (meeting == null)
             {
-                return NotFound(); // מחזיר 404 אם הפגישה לא נמצאה
+                return NotFound(); // returns 404 if the meeting is not found
             }
-            return Ok(meeting);// מחזיר 200 אם הפגישה נמצאה
+            return Ok(meeting); // returns 200 if the meeting is found
+        }
+
+        // GET by start time
+        [HttpGet("Get/{start}")]
+        public async Task<ActionResult> GetByStart(DateTime start)
+        {
+            var meeting = await _meetingService.GetByStartAsync(start);
+            if (meeting == null)
+            {
+                return NotFound(); // returns 404 if the meeting is not found
+            }
+            return Ok(meeting); // returns 200 if the meeting is found
         }
 
         // POST api/<MeetingsController>
         [HttpPost]
-        public void Post([FromBody] Meeting meeting)
+        public async Task<IActionResult> Post([FromBody] Meeting meeting)
         {
-            _meetingService.Post(meeting);
+            await _meetingService.PostAsync(meeting);
+            return CreatedAtAction(nameof(Get), new { id = meeting.Id }, meeting);
         }
+
         // PUT api/<MeetingsController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Meeting meeting)
+        public async Task<ActionResult> Put(int id, [FromBody] Meeting meeting)
         {
-            int request = _meetingService.Put(id, meeting);
-            if (request == 1)
+            var result = await _meetingService.PutAsync(id, meeting);
+            if (result == 1)
             {
-                return new EmptyResult();
+                return NoContent(); // returns 204 if the update was successful
             }
-            return NotFound();
+            return NotFound(); // returns 404 if the meeting is not found
         }
 
+        // DELETE api/<MeetingsController>/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            int request = _meetingService.Delete(id);
-            if (request == 1)
+            var result = await _meetingService.DeleteAsync(id);
+            if (result == 1)
             {
-                return new EmptyResult();
+                return NoContent(); // returns 204 if the delete was successful
             }
-            return NotFound();
+            return NotFound(); // returns 404 if the meeting is not found
         }
     }
-
 }
-      

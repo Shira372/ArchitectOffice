@@ -1,71 +1,66 @@
 ﻿using ArchitectsOffice.Entities;
-using Clean.Core.Models;
 using Clean.Core.Services;
-using Clean.Data.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
-
-namespace ArchitectsOffice.Controllers
+namespace Clean.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
     public class CustomersController : ControllerBase
     {
         private readonly ICustomerService _customerService;
+
         public CustomersController(ICustomerService customerService)
         {
             _customerService = customerService;
         }
-        // GET: api/<CustomersController>
+
         [HttpGet]
-        public IEnumerable<Customer> Get()
+        public async Task<IActionResult> GetAll()
         {
-            //IArchitectService-השם של הפונקציה צריך להיות כמו
-            return _customerService.GetAll();
+            var customers = await _customerService.GetAllAsync();
+            return Ok(customers);
         }
 
-        // GET api/<CustomersController>/5
         [HttpGet("{id}")]
-
-        public IActionResult Get(int id)
+        public async Task<IActionResult> GetItem(int id)
         {
-            Customer customer = _customerService.GetItem(id);
+            var customer = await _customerService.GetItemAsync(id);
             if (customer == null)
             {
-                return NotFound(); // מחזיר 404 אם הלקוח לא נמצא
+                return NotFound();
             }
-            return Ok(customer); // מחזיר 200 אם הלקוח נמצא
+            return Ok(customer);
         }
 
-        // POST api/<CustomersController>
         [HttpPost]
-        public void Post([FromBody] Customer customer)
+        public async Task<IActionResult> Post([FromBody] Customer customer)
         {
-            _customerService.Post(customer);
-        }
-        // PUT api/<CustomersController>/5
-        [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Customer customer)
-        {
-            int request = _customerService.PutByCustomer(id, customer);
-            if (request == 1)
-            {
-                return new EmptyResult();
-            }
-            return NotFound();
+            await _customerService.PostAsync(customer);
+            return CreatedAtAction(nameof(GetItem), new { id = customer.Id }, customer);
         }
 
-        [HttpPut("Put/{id}")]
-        //במקום מחיקה-שינוי סטטוס ל-0
-        public ActionResult Put(int id, int status)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutByCustomer(int id, [FromBody] Customer customer)
         {
-            int request = _customerService.PutByStatus(id, status);
-            if (request == 1)
+            var result = await _customerService.PutByCustomerAsync(id, customer);
+            if (result == 0)
             {
-                return new EmptyResult();
+                return NotFound();
             }
-            return NotFound();
+            return NoContent();
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> PutByStatus(int id, [FromBody] int status)
+        {
+            var result = await _customerService.PutByStatusAsync(id, status);
+            if (result == 0)
+            {
+                return NotFound();
+            }
+            return NoContent();
         }
     }
 }

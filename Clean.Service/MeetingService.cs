@@ -2,11 +2,8 @@
 using Clean.Core.Models;
 using Clean.Core.Repositories;
 using Clean.Core.Services;
-using Clean.Data.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Clean.Service
@@ -14,37 +11,40 @@ namespace Clean.Service
     public class MeetingService : IMeetingService
     {
         private readonly IMeetingRepository _meetingRepository;
+
         public MeetingService(IMeetingRepository meetingRepository)
         {
             _meetingRepository = meetingRepository;
         }
-        public List<Meeting> GetAll()
+
+        public async Task<List<Meeting>> GetAllAsync()
         {
-            return _meetingRepository.GetAll();
+            return await _meetingRepository.GetAllAsync();
         }
 
-        public Meeting Get(int id)
+        public async Task<Meeting> GetAsync(int id)
         {
-            return _meetingRepository.Get(id);
+            return await _meetingRepository.GetAsync(id);
         }
 
-        public Meeting GetByStart(DateTime dateTime)
+        public async Task<Meeting> GetByStartAsync(DateTime start)
         {
-            return _meetingRepository.GetByStart(dateTime);
-        }
-        public void Post(Meeting meeting)
-        {
-            _meetingRepository.Post(meeting);
+            return await _meetingRepository.GetByStartAsync(start);
         }
 
-        public int Put(int id, Meeting meeting)
+        public async Task PostAsync(Meeting meeting)
         {
-            return _meetingRepository.Put(id, meeting);
+            await _meetingRepository.PostAsync(meeting);
         }
 
-        public int Delete(int id)
+        public async Task<int> PutAsync(int id, Meeting meeting)
         {
-            return _meetingRepository.Delete(id);
+            return await _meetingRepository.PutAsync(id, meeting);
+        }
+
+        public async Task<int> DeleteAsync(int id)
+        {
+            return await _meetingRepository.DeleteAsync(id);
         }
     }
 }

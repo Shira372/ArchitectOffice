@@ -21,9 +21,9 @@ namespace Clean.Data.Repositories
             Architects = architectRepository;
         }
 
-        public void Save()
+        public async void SaveAsync()
         {
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

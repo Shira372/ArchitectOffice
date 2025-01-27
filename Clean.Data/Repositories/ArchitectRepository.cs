@@ -1,64 +1,62 @@
 ﻿using Clean.Core.Models;
-using Clean.Core.Repositories;
+using Clean.Data.Repositories;
+using Clean.Data;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
-namespace Clean.Data.Repositories
+public class ArchitectRepository : Repository<Architect>, IArchitectRepository
 {
-    public class ArchitectRepository:Repository<Architect>, IArchitectRepository
+    protected readonly DataContext _context;
+
+    public ArchitectRepository(DataContext context) : base(context)
     {
-        protected readonly DataContext _context;
-        public ArchitectRepository(DataContext context) : base(context)
-        {
-        }
-        public IEnumerable<Architect> GetList()
-        {
-            return _context.Architects.Include(u => u.Plan);
-        }
+        _context = context;
+    }
 
-        public void Post(Architect architect)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task<List<Architect>> GetAllAsync()
+    {
+        return await _context.Architects.Include(u => u.Plan).ToListAsync();  // שינוי לאסינכרוני
+    }
 
-        public int PutByArchitect(int id, Architect architect)
+    public async Task<Architect> GetItemAsync(int id)
+    {
+        return await _context.Architects.Include(u => u.Plan).FirstOrDefaultAsync(a => a.Id == id);  // חיפוש אסינכרוני
+    }
+
+    public async Task<int> PutByArchitectAsync(int id, Architect architect)
+    {
+        var existingArchitect = await _context.Architects.FindAsync(id);
+        if (existingArchitect == null)
         {
-            for (int i = 0; i < _context.Architects.ToList().Count; i++)
-            {
-                if (_context.Architects.ToList()[i].Id == id)
-                {
-                    _context.Architects.ToList().RemoveAt(i);
-                    _context.Architects.ToList().Insert(i, architect);
-                    //_context.SaveChanges();
-                    return 1;
-                }
-            }
-            return 0;
-        }
-        public int PutByStatus(int id, int status)
-        {
-            for (int i = 0; i < _context.Architects.ToList().Count; i++)
-            {
-                if (_context.Architects.ToList()[i].Id == id)
-                {
-                    _context.Architects.ToList()[i].Status = status;
-                    //_context.SaveChanges();
-                    return 1;
-                }
-            }
             return 0;
         }
 
-        List<Architect> IArchitectRepository.GetAll()
+        _context.Entry(existingArchitect).CurrentValues.SetValues(architect);
+        //await _context.SaveChangesAsync();
+        return 1;
+    }
+
+    public async Task<int> PutByStatusAsync(int id, int status)
+    {
+        var architect = await _context.Architects.FindAsync(id);
+        if (architect == null)
         {
-            throw new NotImplementedException();
+            return 0;
         }
+
+        architect.Status = status;
+       // await _context.SaveChangesAsync();
+        return 1;
+    }
+
+    public async Task PostAsync(Architect architect)
+    {
+        await _context.Architects.AddAsync(architect);  // הוספה אסינכרונית
+        //await _context.SaveChangesAsync();
+    }
+
+    public Task<int> PutByArchitectAsync(Architect architect)
+    {
+        throw new NotImplementedException();
     }
 }
-
-    

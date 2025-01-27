@@ -1,22 +1,10 @@
 ﻿using Clean.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Clean.Data.Services
+public interface IArchitectService
 {
-    public interface IArchitectService
-    {
-        //?
-        List<Architect> GetAll();
-        //?
-        Architect GetItem(int id);
-        //?
-        void Post(Architect architect);
-        int PutByArchitect(int id, Architect architect);
-        int PutByStatus(int id, int status);
-
-    }
+    Task<List<Architect>> GetAllAsync();  // שינוי לפונקציה אסינכרונית
+    Task<Architect> GetItemAsync(int id);  // שינוי לפונקציה אסינכרונית
+    Task PostAsync(Architect architect);  // שינוי לפונקציה אסינכרונית
+    Task<int> PutByArchitectAsync(int id, Architect architect);  // שינוי לפונקציה אסינכרונית
+    Task<int> PutByStatusAsync(int id, int status);  // שינוי לפונקציה אסינכרונית
 }

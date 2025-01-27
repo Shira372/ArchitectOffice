@@ -1,18 +1,11 @@
 ﻿using Clean.Core.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Clean.Core.Repositories
+public interface IArchitectRepository
 {
-    public interface IArchitectRepository
-    {
-        List<Architect> GetAll();
-        Architect GetById(int id);
-        void Post(Architect architect);
-        public int PutByArchitect(int id, Architect architect);
-        public int PutByStatus(int id, int status);
-    }
+    Task<List<Architect>> GetAllAsync();  // שינוי ל-GetAllAsync
+    Task<Architect> GetItemAsync(int id);
+    Task<int> PutByArchitectAsync(Architect architect);
+    Task<int> PutByArchitectAsync(int id, Architect architect);
+    Task<int> PutByStatusAsync(int id, int status);
+    Task PostAsync(Architect architect);  // הפונקציה הזו יכולה להיות אסינכרונית
 }

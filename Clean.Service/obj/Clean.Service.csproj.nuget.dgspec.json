@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Service\\Clean.Service.csproj": {}
+    "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Service\\Clean.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Core\\Clean.Core.csproj": {
+    "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Core\\Clean.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Core\\Clean.Core.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Core\\Clean.Core.csproj",
         "projectName": "Clean.Core",
-        "projectPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Core\\Clean.Core.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Core\\Clean.Core.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Core\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Service\\Clean.Service.csproj": {
+    "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Service\\Clean.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Service\\Clean.Service.csproj",
+        "projectUniqueName": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Service\\Clean.Service.csproj",
         "projectName": "Clean.Service",
-        "projectPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Service\\Clean.Service.csproj",
+        "projectPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Service\\Clean.Service.csproj",
         "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Service\\obj\\",
+        "outputPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Core\\Clean.Core.csproj": {
-                "projectPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Core\\Clean.Core.csproj"
+              "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Core\\Clean.Core.csproj": {
+                "projectPath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Core\\Clean.Core.csproj"
               }
             }
           }

@@ -15,4 +15,6 @@ namespace Clean.Core.DTOs
         public int PlanId { get; set; }
         public PlanDTO Plan { get; set; }
     }
+
+
 }

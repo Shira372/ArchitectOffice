@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PToE1bQ5uw1kRWbD1+/tvURCkUKUJoRkNQcTegm/DpHsD/slt6qqFwGr70pxMBYxl4ItojabsOkpCLQfQUoh+g==",
+  "dgSpecHash": "iIw0/+3uCINFFog8QX3znPFyWUGywQvHfob3ZHsSG7rcS3BM10lodGryOFMy2vznDtrofz0gvQFAwMynoPa4eQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\DTO-כא כסליו\\Clean\\Clean.Data\\Clean.Data.csproj",
+  "projectFilePath": "C:\\Users\\user1\\Desktop\\שנה ב-תשפה\\dote .Net\\Asynchronous- טבת\\Clean\\Clean.Data\\Clean.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user1\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\user1\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

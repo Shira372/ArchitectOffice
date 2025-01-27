@@ -1,49 +1,43 @@
 ﻿using Clean.Core.Models;
 using Clean.Core.Repositories;
-using Clean.Data.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using Clean.Data.Services;
 
-namespace Clean.Service
+public class ArchitectService : IArchitectService
 {
-    public class ArchitectService: IArchitectService
+    private readonly IArchitectRepository _architectRepository;
+
+    public ArchitectService(IArchitectRepository architectRepository)
     {
-        //IEnumerable<T> GetAll();
-        //T? GetById(int id);
-        //T Add(T entity);
-        //T Update(T entity);
-        //void Delete(T entity);
-        private readonly IArchitectRepository _architectRepository;
-        public ArchitectService(IArchitectRepository architectRepository)
-        {
-            _architectRepository = architectRepository;
-        }
-        public List<Architect> GetAll()
-        {
-            return _architectRepository.GetAll();
-        }
+        _architectRepository = architectRepository;
+    }
 
-        public Architect GetItem(int id)
-        {
-           return _architectRepository.GetById(id);
-        }
+    public async Task<List<Architect>> GetAllAsync()
+    {
+        return await _architectRepository.GetAllAsync();  // שינוי לפונקציה אסינכרונית
+    }
 
-        public void Post(Architect architect)
-        {
-             _architectRepository.Post(architect);
-        }
+    public async Task<Architect> GetItemAsync(int id)
+    {
+        return await _architectRepository.GetItemAsync(id);
+    }
 
-        public int PutByArchitect(int id, Architect architect)
-        {
-            return _architectRepository.PutByArchitect(id,architect);
-        }
+    public async Task<int> PutByArchitectAsync(Architect architect)
+    {
+        return await _architectRepository.PutByArchitectAsync(architect);
+    }
 
-        public int PutByStatus(int id, int status)
-        {
-           return _architectRepository.PutByStatus(id, status);
-        }
+    public async Task<int> PutByArchitectAsync(int id, Architect architect)
+    {
+        return await _architectRepository.PutByArchitectAsync(id, architect);  // שינוי לפונקציה אסינכרונית
+    }
+
+    public async Task<int> PutByStatusAsync(int id, int status)
+    {
+        return await _architectRepository.PutByStatusAsync(id, status);  // שינוי לפונקציה אסינכרונית
+    }
+
+    public async Task PostAsync(Architect architect)
+    {
+        await _architectRepository.PostAsync(architect);  // הפונקציה הזו יכולה להיות אסינכרונית
     }
 }
